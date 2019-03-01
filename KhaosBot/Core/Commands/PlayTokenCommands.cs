@@ -74,7 +74,7 @@ namespace KhaosBot.Core.Commands
 
 
                 Timer timer = new Timer();
-                timer.Interval = (TimeAmount * 1000 * 10);
+                timer.Interval = (TimeAmount * 1000 * 60);
                 timer.Enabled = true;
                 timer.Elapsed += async delegate { await OnTimedEvent(Context, raffleId, timer); };
                 timer.Start();
